@@ -35,6 +35,24 @@ public class BidServiceImpl implements BidService {
 
         return response;
     }
+    
+    public long bid(long request) {
+        long response = 0;
+
+        
+        for(int i=0;i<request;i++){
+        	response+=i;
+        }
+
+        return response;
+    }
+    
+    public String bid(long request,String response) {
+        for(int i=0;i<request;i++){
+        	response+=i;
+        }
+        return response;
+    }
 
     public void throwNPE() throws NullPointerException {
         throw new NullPointerException();

@@ -19,5 +19,9 @@ public interface BidService {
 
 	BidResponse bid(BidRequest request);
 
-    void throwNPE() throws NullPointerException;
+	long bid(long request);
+
+	String bid(long request,String response);
+
+	void throwNPE() throws NullPointerException;
 }
